@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.frPage {
+  height:500px;
+  background-color: black;
+  color: rgb(197, 55, 55);
+  padding-left: 11px;
+}
+
+.tbox {
+  position: absolute;
+  right: 0; margin-right: 5px;
+  top: 50x;
+  width: 260px; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional: Add a background color */
+  border: 1px solid #ea3a3a; /* Optional: Add a border */
+}
+
+.joiner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.addB {
+  margin-left: 10px;border-width: 0;border-color: #ea3a3a;border-radius: 8px;
+}
+
+
+.addB:hover { margin-left: 1[x];
+  color: rgb(255, 170, 0);border-width: 1px;box-shadow:gold;border-color: goldenrod;
+}
+.itemsMap {
+  color: #61dafb;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.plainBut {
+  color: white;
+  background: none;
+  border-width: 0;
+  transition: color 0.3s ease;
+}
+
+.plainBut:hover {
+  color: rgb(255, 170, 0);
+}
+
+.plainBut1 {
+  padding-bottom: 5px;
+  color: white;
+  background: none;
+  border-width: 0;
+  transition: color 0.3s ease;
+}
+
+.plainBut1:hover {
+  color: rgb(255, 170, 0);
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
