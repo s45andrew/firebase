@@ -1,0 +1,164 @@
+.App {
+  text-align: center;
+}
+
+.frPage {
+  height:500px;
+  background-color: black;
+  color: rgb(197, 55, 55);
+  padding-left: 11px;
+}
+
+.tbox {
+  position: absolute;
+  right: 0; margin-right: 5px;
+  top: 50x;
+  width: 260px; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: #bbea22; /* Optional: Add a background color */
+  border: 1px solid #ea3a3a; /* Optional: Add a border */
+}
+
+.joiner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.addB {
+  margin-left: 10px;border-width: 0;border-color: #ea3a3a;border-radius: 8px;
+}
+
+
+.addB:hover { margin-left: 1[x];
+  color: rgb(255, 170, 0);border-width: 1px;box-shadow:gold;border-color: goldenrod;
+}
+.itemsMap {
+  color: #61dafb;
+}
+.bar{
+  margin-bottom: 5px;
+  color: white;
+  background-color: grey;
+  border-width: 1px; border-radius:7px;
+  transition: color 0.3s ease;
+  
+}
+
+.bar:hover {
+  color: rgb(254, 251, 246);background-color:  rgb(255, 170, 0);
+  cursor: pointer;font-weight: bold;
+}
+.barray{
+  display: flex;flex-direction: column;
+    width:25vh; margin-left :5px;
+}.gratit{  display: flex;flex-direction: row; justify-content: space-between;
+  margin-left :5px;padding-left:15px; padding-right:15vh; 
+  background-color: #434242; height: 16vh;;
+}.graname{
+  margin-left :11px;
+  color:rgb(198, 193, 188);
+}
+.times{
+  display:flex; justify-content: space-around;
+  margin-right:-20px;
+
+  margin-left:-20px;padding:0;
+}
+.tim{
+  width:20%; font-size :8px;padding:0;
+}
+  .tim:hover {
+    color: rgb(254, 251, 246);background-color:  rgb(255, 170, 0);
+    cursor: pointer;font-weight: bold;
+  }
+
+.tesla{
+  display: flex;
+  justify-content: space-between;
+     margin-left: 5px;
+    top: 50px;
+    height:70vh; /* Adjust the width as needed */
+    padding: 20px;
+    background-color: #434242; /* Optional: Add a background color */
+    border: 1px solid #ea3a3a; /* Optional: Add a border */
+  
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.plainBut {
+  color: white;
+  background: none;
+  border-width: 0;
+  transition: color 0.3s ease;
+}
+
+.plainBut:hover {
+  color: rgb(255, 170, 0);
+}
+
+.plainBut1 {
+  padding-bottom: 5px;
+  color: white;
+  background: none;
+  border-width: 0;
+  transition: color 0.3s ease;
+}
+
+.plainBut1:hover {
+  color: rgb(255, 170, 0);
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height:100px;
+}
+
+.logout {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
