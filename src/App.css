@@ -36,37 +36,49 @@
 .itemsMap {
   color: #61dafb;
 }
-.bar{
+.bar {
   margin-bottom: 5px;
   color: white;
   background-color: grey;
-  border-width: 1px; border-radius:7px;
-  transition: color 0.3s ease;
-  
+  border-width: 1px;
+  border-radius: 7px;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 .bar:hover {
-  color: rgb(254, 251, 246);background-color:  rgb(255, 170, 0);
-  cursor: pointer;font-weight: bold;
+  color: rgb(254, 251, 246);
+  background-color: rgb(255, 170, 0);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bar.active {
+  color: rgb(254, 251, 246);
+  background-color: rgb(255, 170, 0);
+  font-weight: bold;
 }
 .barray{
   display: flex;flex-direction: column;
     width:25vh; margin-left :5px;
 }.gratit{  display: flex;flex-direction: row; justify-content: space-between;
-  margin-left :5px;padding-left:15px; padding-right:15vh; 
+  margin-left :0px;padding-left:15px; padding-right:15vh; 
   background-color: #434242; height: 16vh;;
 }.graname{
   margin-left :11px;
   color:rgb(198, 193, 188);
-}
+}.thegraph{width:200px;}
+.StockStuff{ display:fley; flex:1;
+   }
 .times{
-  display:flex; justify-content: space-around;
-  margin-right:-20px;
+  display:flex; flex-direction: column;
+  justify-content: flex-start;
+  
+  margin-right:18px;width :17%;
 
-  margin-left:-20px;padding:0;
+  padding:0; border-width:2px;border-color: #ea3a3a;
 }
 .tim{
-  width:20%; font-size :8px;padding:0;
+  width:99%; font-size :8px;padding:0;margin:0;
 }
   .tim:hover {
     color: rgb(254, 251, 246);background-color:  rgb(255, 170, 0);
@@ -76,10 +88,10 @@
 .tesla{
   display: flex;
   justify-content: space-between;
-     margin-left: 5px;
-    top: 50px;
+     margin-left: opx;
+    top: 50px;width:100%;
     height:70vh; /* Adjust the width as needed */
-    padding: 20px;
+    padding-left: 10px;padding-top: 20px;
     background-color: #434242; /* Optional: Add a background color */
     border: 1px solid #ea3a3a; /* Optional: Add a border */
   
@@ -113,12 +125,19 @@
 }
 
 .login {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height:100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.navy {
+  display: flex;
+  align-items:start;
+  gap: 15vh; /* Adjust the gap as needed */
+}
+
+.log {position:absolute; top:3px; margin-left:99vh; }
+  
 .logout {
   position: absolute;
   top: 0;

@@ -4,28 +4,28 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
 
-const LineGraph = ({ tesla }) => {
-  if (!tesla) {
-    return <div>Loading...</div>; // Display a loading message if tesla is undefined
+const LineGraph = ({ data }) => {
+  if (!data) {
+    return <div>Loading...</div>; // Display a loading message if data is undefined
   }
- tesla = [...tesla].reverse()
-  const teslamax = Math.max(...tesla.map(item => item.price));
-  const teslamin = Math.min(...tesla.map(item => item.price));
-  const sampleData = [];
-  tesla.forEach(item => {
-    sampleData.push(item.price);
-  });
 
-  const formattedDates = tesla.map(item => {
+  data = data.filter(item => item && item.price !== undefined).reverse();
+
+  const teslamax = Math.max(...data.map(item => item.price));
+  const teslamin = Math.min(...data.map(item => item.price));
+  const sampleData = data.map(item => item.price);
+
+  const formattedDates = data.map(item => {
     const date = new Date(item.date);
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   });
 
- const roundMin = Math.round(teslamin/10)*10;
- const minWithMargin =Math.ceil(roundMin+(roundMin*-0.07));
- const roundMax = Math.round(teslamax /10) *10;
- const maxWithMargin =Math.ceil(roundMax+(roundMax*0.07) )
- const canvasData = {
+  const roundMin = Math.round(teslamin / 10) * 10;
+  const minWithMargin = Math.ceil(roundMin + (roundMin * -0.07));
+  const roundMax = Math.round(teslamax / 10) * 10;
+  const maxWithMargin = Math.ceil(roundMax + (roundMax * 0.07));
+
+  const canvasData = {
     labels: formattedDates,
     datasets: [
       {
@@ -89,7 +89,7 @@ const LineGraph = ({ tesla }) => {
   const graphStyle = {
     minHeight: "10rem",
     maxWidth: "540px",
-    width: "100%",
+    width: "80vh",
     border: "0px solid #C4C4C4",
     borderRadius: "0.375rem",
     padding: "0.5rem",
